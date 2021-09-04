@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+
+	<form action="/meal_log/" method="post">
+<!--		<label for="group_name">Group Name:</label>
+<input id="group_name" type="text" name="group_name"> -->
+		{% csrf_token %}
+
+		{{ form }}
+	    <input type="submit" value="OK">
+	</form>
+{% endblock %}
+

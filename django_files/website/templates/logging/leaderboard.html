@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<table style="width:100%" class="table table-bordered border-dark table-secondary">
+{% for group in leaderboard %}
+<tr scope="row">
+	<td>	{{group.group_name}}</td>
+	<td>	{{group.meals_eaten}}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}
+

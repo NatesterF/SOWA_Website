@@ -10,21 +10,20 @@
 		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
 	</head>
 	<body>
-		<div class="header">
-		<div class="row">
-				<div class="text-left col-8">
-					<a  href="/"><h1 class="topBar">Meat-Free Camps</h1></a>
+		<div class="row bg-dark text-white ">
+				<div class="pl-4 text-left col-6">
+					<a  class="link-light text-decoration-none" href="/"><h1 class="text-white">Meat-Free Camps</h1></a>
 				</div>
-				<div class="col-1">
+				<div class="col-2">
 					<!--<a href=""><h2 class="topBar"> Why meatless? </i></h2></a>-->
-				    		<button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="location.href ='/why'">
+				    		<button class="btn btn-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="location.href ='/why'">
 					    	 Why Meatless?
 						    </button>
 				</div>
 				<div class="col-1">
 
 				  <div class="dropdown">
-				    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				      Recipes
 				    </button>
 				    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -35,15 +34,15 @@
 				    </div>
 				  </div>
 				</div>
-				<div class="col-1">
+				<div class="col-2">
 					<!--<a href=""><h2 class="topBar"> Why meatless? </i></h2></a>-->
-				    		<button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="location.href ='/why'">
+				    		<button class="btn btn-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="location.href ='/meal_log'">
 					    	 Log your meals
 						    </button>
 				</div>
 				<div class="col-1">
 					<!--<a href=""><h2 class="topBar"> Why meatless? </i></h2></a>-->
-				    		<button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="location.href ='/why'"  >
+				    		<button class="btn btn-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-easpopup="true" aria-expanded="false" onclick="location.href ='/meal_log/leaderboard'"  >
 					    	 Leaderboard
 						    </button>
 				</div>
@@ -51,10 +50,13 @@
 			</div>
 		</div>
 		<br>
-		<div class="content">
+		<div class="content-float pl-3 d-flex min-vh-100">
 		{% block content %}
 		{%endblock%}
 		</div>
+		<footer class="fixed-bottom bg-dark text-center navbar navbar-fixed-bottom position-sticky sticky-bottom" style="padding-bottom:70px" >
+			<img href=https://prod-cms.scouts.org.uk/media/5108/swa_new.png">
+		</footer>
 	</body>
 
 </HTML>

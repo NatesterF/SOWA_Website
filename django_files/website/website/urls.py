@@ -20,4 +20,6 @@ urlpatterns = [
     path('',include('home.urls')),
     path('admin/', admin.site.urls),
     path('recipes/',include('recipes.urls')),
+    path('meal_log/',include('log_meals.urls')),
+    
 ]

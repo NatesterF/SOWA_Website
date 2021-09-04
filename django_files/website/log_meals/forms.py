@@ -1,4 +1,12 @@
 from django import forms
+from django.forms import ModelForm
+from django.db import models
+from .models import MealLog
+import datetime
 
-class NameForm(forms.Form):
-    group_name = forms.CharField(label='Group Name', max_length=100)
+class MealForm(ModelForm):
+    class Meta:
+        model = MealLog
+        fields = ['group_name','meal_eaten','date','how_did_you_find_it']
+
+
