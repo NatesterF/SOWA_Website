@@ -6,8 +6,23 @@
 <input id="group_name" type="text" name="group_name"> -->
 		{% csrf_token %}
 
-		{{ form }}
-	    <input type="submit" value="OK">
+		<div class="container">
+			
+		{%for question in  form %}
+		<div class="row">
+				<div class="col-sm">{{question.label}}: </div>
+				<div class="col-sm">{{question}}</div>
+				<br/>
+				<br/>
+			</div>
+		{%endfor%}
+		</div>
+			<br>
+		<div class="row">
+			<div class="col-sm"></div>
+			<div class="col-sm"><input  type="submit" value="OK"></div>
+	    
+		</div>
 	</form>
 {% endblock %}
 

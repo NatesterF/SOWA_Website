@@ -7,6 +7,6 @@ import datetime
 class MealForm(ModelForm):
     class Meta:
         model = MealLog
-        fields = ['group_name','meal_eaten','date','how_did_you_find_it']
+        fields = ['group_name','meal_eaten','date','number_of_people_participating','how_did_you_find_it']
 
 

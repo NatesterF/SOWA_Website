@@ -1,8 +1,11 @@
 {% extends 'base.html' %}
 {%block content%}
 	{% for recipe in recipe_list %}
-		<h1>{{recipe.title}}</h1>
-		<h3>{{recipe.ingredients_list}}</h3>
-		<p>{{recipe.method}}</p>
+	<div class="container-float border rounded border-dark pl-4 mr-4 ">
+		<a class="link-dark text-decoration-none"  href="/recipes/{{recipe.url_name}}"> <h1>{{recipe.title}}</h1></a>
+	<p class="pl-4">{{recipe.description}}</p>
+	<p class="text-right pr-4"> Serves {{recipe.serves}}</p>
+	</div>	
+	<br/>
 	{%endfor%}
 {%endblock%}
